@@ -1,0 +1,10 @@
+{
+  "pdf_path": "E:\\SchoolContents\\智能创造\\小组实验\\AI开发技术-实验3-基于RAG的复杂pdf文档智能问答系统\\金融研报.pdf",
+  "pdf_name": "金融研报.pdf",
+  "total_pages": 23,
+  "text_segments": 67,
+  "image_count": 59,
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "vector_dim": 512,
+  "chunk_size": 512
+}

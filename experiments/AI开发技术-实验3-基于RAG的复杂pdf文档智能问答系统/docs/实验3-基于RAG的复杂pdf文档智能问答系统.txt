@@ -1,0 +1,74 @@
+AI开发技术实验4-基于RAG的复杂pdf文档智能问答系统
+
+1. 实验目的
+1）理解并实现本地/API的RAG（Retrieval-Augmented Generation）技术原理，掌握复杂pdf文档的解析、向量化与检索增强完整流程；
+2）掌握复杂系统中多组件（PDF解析器，表格解析、向量数据库、大模型API、前端界面）的协同开发与集成；
+3）熟悉配置基于大模型的代码生成环境；
+4）掌握面向复杂系统的Agent与Skill拆解方法，理解如何通过模块化Skill库实现多组件系统的自动化代码生成；
+5）对比"单提示词一次性生成"与"多Skill协同生成"在复杂系统工程中的差异与优劣。
+
+2. 实验内容
+1）使用熟悉的大模型和开发环境，搭建代码生成环境。开发环境可以是VSCode，及其插件Cline/Claude Code等，大模型可以使用DeepSeek/GLM/Codex/Claude；
+2）阶段一：单提示词生成。通过自然语言提示词，要求大模型一次性生成完整的"PDF智能问答系统"代码（包含PDF结构解析（使用LlamaIndex对PDF进行向量化）表格解析、Milvus向量存储、DeepSeek问答、Streamlit前端）。记录生成过程、代码结构、调试次数及遇到的依赖冲突/接口不匹配问题；
+3）阶段二：Agent + 多Skill协同生成。不再使用单提示词，而是先为Agent定义和加载针对RAG系统特性的专项Skill，然后分阶段驱动Agent完成系统构建。
+其中Skill可以包括：
+pdf解析skill（PDF结构解析，table解析，chart解析）
+RAG系统Skill（检索，增强，生成），
+前端Skill（Streamlit界面开发），
+向量数据库Skill（Milvus配置与操作)。
+4）进行充分的问答测试，对比阶段一与阶段二的开发系统差异，以及问答结果优势，并给出具体的问答案例/截图（切记泛泛而谈，面面俱到）。
+
+解析文档：金融研报.pdf
+问题例子：
+1.文档问题1
+问：截至2023年7月7日，从宽基指数来看，创业板指处于估值分位数的什么等级？
+答：截至2023年7月7日，从宽基指数来看，创业板指处于估值分位数的“安全”等级。
+2.文档问题2
+问：沪深300上涨家数占比情绪指标的计算方法是什么？
+答：沪深300指数N日上涨家数占比=沪深300指数成分股过去N日收益大于0的个股数占比。
+3.表格问题1
+问：从宽基指数表现上看，沪深300的开盘价是多少？
+答：沪深300的开盘价是3853.29。
+4.表格问题2
+问：在中信一级行业指数估值中，有色金属的PE（TTM）值是多少？
+答：在中信一级行业指数估值中，有色金属的PE（TTM）值是14.84。
+
+3. 实验要求
+1）详细记录VSCode + Cline + DeepSeek的配置过程；
+2）分别记录两个阶段中Agent的任务拆解轨迹（如Agent如何将"做一个RAG系统"拆分为子任务）、Skill调用等；
+3）根据实验过程和报告，完成PPT，并演示最终生成的代码程序，录制并上传视频；
+4）认真总结实验的心得体会。
+
+4. 相关资料
+
+1）RAG原理与LlamaIndex
+https://arxiv.org/abs/2005.11401
+https://www.bilibili.com/video/BV1ep4y1F7Hg/
+https://www.bilibili.com/video/BV16Qs1zrEuf/
+llamaindex + streamlit
+https://github.com/carolinefrasca/llamaindex-chat-with-streamlit-docs
+chatbot
+https://github.com/carolinefrasca/llamaindex-chat-with-streamlit-docs
+https://github.com/reichenbch/RAG-examples
+https://github.com/Anil-matcha/streamlit-api-integration
+https://github.com/streamlit/example-app-file-upload
+
+2）关于DeepSeek、Agent和Skills
+https://www.bilibili.com/video/BV1SB9dBGErR/
+https://www.bilibili.com/video/BV1EXksBGEa8/
+claude_code配置DeepSeek
+https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/claude_code
+
+3）Skills资源
+通用Skill
+https://github.com/anthropics/skills
+https://github.com/obra/superpowers
+Skills搜索网站
+https://skills.sh
+例如：前端Skill
+https://skills.sh/?q=frontend
+Streamlit Skills
+https://github.com/streamlit/agent-skills
+RAG相关Skill参考
+https://github.com/run-llama/llama_index
+https://github.com/langchain-ai/langchain

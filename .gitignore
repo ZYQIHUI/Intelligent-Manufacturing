@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.atomcode/
+
+# AI tool config (keep .claude/ if contains project-relevant Skills)
+.opencode/
+.claude/settings.local.json
+
+# Node
+node_modules/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Docker
+.docker/
+
+# Auto-downloaded datasets (MNIST etc.)
+experiments/AI开发技术-实验1-前端streamlit的手写体识别mnist/Agent+Skills/data/
+
+# Milvus / Vector DB data (generated at runtime)
+*.db
+milvus.db/

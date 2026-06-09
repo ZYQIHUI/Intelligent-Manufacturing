@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 list *)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(python *)",
+      "Bash(where tesseract *)",
+      "Bash(winget install *)",
+      "Bash(choco install *)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Bash(curl *)",
+      "Skill(pdf)",
+      "Skill(pdf:*)",
+      "Bash(qpdf --version)",
+      "Bash(pip install *)",
+      "Read(//c//**)",
+      "Read(//c/Users/**)",
+      "Bash(mkdir -p \"c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/prompt版本\")",
+      "Bash(cp c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/prompt版本/问题一/charts/*.png c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/prompt版本/报告/figures/)",
+      "Bash(cp c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/prompt版本/问题二/charts/*.png c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/prompt版本/报告/figures/)",
+      "Bash(cp c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/prompt版本/问题三/charts/*.png c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/prompt版本/报告/figures/)",
+      "Bash(cp c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/prompt版本/问题四/charts/*.png c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/prompt版本/报告/figures/)",
+      "Bash(cp c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/skill版本/问题一/charts/*.png c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/skill版本/报告/figures/)",
+      "Bash(cp c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/skill版本/问题二/charts/*.png c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/skill版本/报告/figures/)",
+      "Bash(cp c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/skill版本/问题三/charts/*.png c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/skill版本/报告/figures/)",
+      "Bash(cp c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/skill版本/问题四/charts/*.png c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/skill版本/报告/figures/)",
+      "Bash(mkdir -p \"c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/版本对比与新Skill设计/方向一-版本对比\" && mkdir -p \"c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/版本对比与新Skill设计/方向二-新Skill设计\" && mkdir -p \"c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/.claude/skills\" && echo \"Folders created\")",
+      "Bash(mkdir -p \"c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/.claude/skills/data-modeling-pipeline\")",
+      "Bash(mkdir -p \"c:/Users/18672/Desktop/大三下/智能制造创新思维方法/AI开发技术-实验2-数据分析/.claude/skills/latex-report-generator\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\18672\\Desktop\\大三下\\智能制造创新思维方法\\AI开发技术-实验2-数据分析",
+      "c:\\Users\\18672\\Desktop\\大三下\\智能制造创新思维方法\\AI开发技术-实验2-数据分析\\.claude\\skills"
+    ]
+  }
+}

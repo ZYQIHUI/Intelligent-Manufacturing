@@ -1,0 +1,28 @@
+# LlamaIndex Core
+llama-index>=0.11.0
+llama-index-embeddings-huggingface>=0.3.0
+llama-index-llms-openai-like>=0.3.0
+
+# Vector DB (Milvus Lite)
+milvus-lite>=2.4.0
+pymilvus>=2.4.0
+
+# PDF Parsing
+pdfplumber>=0.10.0
+PyMuPDF>=1.23.0
+
+# OCR
+easyocr>=1.7.0
+pillow>=10.0.0
+
+# Embedding
+sentence-transformers>=2.7.0
+torch>=2.0.0
+
+# Frontend
+streamlit>=1.28.0
+
+# Utils
+python-dotenv>=1.0.0
+numpy>=1.24.0
+openai>=1.0.0

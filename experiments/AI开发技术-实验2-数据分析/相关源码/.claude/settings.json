@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where xelatex *)",
+      "Bash(xelatex -interaction=nonstopmode report.tex)",
+      "Bash(bibtex report *)",
+      "Skill(data-analyst-prompter)",
+      "Skill(data-analyst-prompter:*)"
+    ]
+  }
+}
